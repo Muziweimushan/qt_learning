@@ -9,6 +9,9 @@ int main(int argc, char* argv[])
 {
 #if 1
   QCalculatorDec dec;
+  dec.expression("0.1 + (-12 + 34) * -56.3 / (7 + 89)");
+
+  qDebug() << dec.result();
   return 0;
 #else
   QApplication app(argc, argv);
